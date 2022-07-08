@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/recoMed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Recolección de medicamentos"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recoMed"
+        android:layout_alignEnd="@+id/recoMed"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:text="Inicia sesión para continuar"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/is"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="28dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/txtPsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="28dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/lblForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPsw"
+        android:layout_alignStart="@+id/txtPsw"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="-4dp"
+        android:clickable="false"
+        android:text="¿Olvidó su contraseña?"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPsw"
+        app:layout_constraintTop_toBottomOf="@+id/txtPsw" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/lblForgot"
+        android:layout_alignStart="@+id/txtPsw"
+        android:layout_alignEnd="@+id/txtPsw"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPsw" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="26dp"
+        android:text="¿No tienes cuenta?"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/lblRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblRegister"
+        android:layout_width="86dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin"
+        android:layout_alignEnd="@+id/btnLogin"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="41dp"
+        android:text="Registrate"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "181485872374",
+    "project_id": "recoleccionmedicamentos",
+    "storage_bucket": "recoleccionmedicamentos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181485872374:android:8d727364e14248ab7b38d7",
+        "android_client_info": {
+          "package_name": "com.example.recoleccionmedicamentos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181485872374-fn0dra91cjui85kdmv1j68s1a35c1vg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnassihiNWNPkOgRweUHciFql4NV5xSwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181485872374-fn0dra91cjui85kdmv1j68s1a35c1vg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
